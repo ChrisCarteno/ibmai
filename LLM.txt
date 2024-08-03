@@ -19,3 +19,5 @@ Example: You want to build a chatbot that can answer factual questions from a gi
 Language translation:
 For language translation tasks, you can consider models like MarianMT or T5. They are designed specifically for translating text between different languages.
 Example: You want to build a language translation tool that translates English text to French.
+
+To explore all the different options, check out the available models on the Hugging Face website.
