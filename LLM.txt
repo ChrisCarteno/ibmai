@@ -21,3 +21,6 @@ For language translation tasks, you can consider models like MarianMT or T5. The
 Example: You want to build a language translation tool that translates English text to French.
 
 To explore all the different options, check out the available models on the Hugging Face website.
+
+pip install ibm-watson-machine-learning 
+# you can also specifiy the package version such as 1.0.348
