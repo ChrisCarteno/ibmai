@@ -8,7 +8,9 @@ Here, we initialize a language model and its embeddings. Here's a brief descript
 - WatsonX LLM parameters Initialization: Inside the function, a dictionary named params is created, which holds various parameters like maximum and minimum number of tokens to generate, temperature (controlling randomness), and others for configuring the generation behavior of the language model.
 
 - Credentials: A dictionary named credentials is defined with the URL of IBM's cloud service and the API key to authenticate requests to the service.
-- LLM Initialization: A model object, `LLAMA2_model`, is created using the Model class, which is initialized with a specific model ID, credentials, parameters, and project ID. Then, an instance of WatsonxLLM is created with `LLAMA2_model` as an argument, initializing the language model hub `llm_hub`.
+- LLM Initialization: A model object, `LLAMA2_model`, is created using the Model class, which is initialized with a specific model ID, credentials, parameters, and project ID. Then, an instance of WatsonxLLM is created with `LLAMA2_model` as an argument, initializing the language model hub `llm_hub`
+
+.
 
 
 We also initialize embeddings. The embeddings are used to represent text data in a form that machines can understand. They convert human-readable text into numbers (vectors) that capture the semantic meaning of the text.
@@ -36,3 +38,8 @@ After you create a project, you can go to the project’s `Manage` tab > select 
 Lastly, you can follow the below demonstration to create/get your [IBM Cloud user API key](https://cloud.ibm.com/iam/apikeys?utm_source=skills_network&utm_content=in_lab_content_link&utm_id=Lab-test1_v1_1702536549). Be sure to write your API key down somewhere right after you create it, because you won’t be able to see it again!
 
 ![Getting IBM cloud user API key](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMSkillsNetwork-GPXX0PPIEN/ezgif.com-video-to-gif.gif)
+
+docker build . -t build_chatbot_for_your_data
+docker run -p 8000:8000 build_chatbot_for_your_data
+
+pip install -r requirements.txt
